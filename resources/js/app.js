@@ -2,7 +2,7 @@ require('./bootstrap');
 
 import axios from "axios";
 
-const DOMAIN            = 'http://localhost:8000/'
+const DOMAIN            = 'https://lastminuteenglish.org/'
 const ORIGINAL_LOCATION = window.location.href;
 
 let mobileNav = document.getElementById('mobile-nav');
@@ -61,12 +61,9 @@ const popoutSubscribeBtn = document.getElementById('popout-subscribe-btn');
 
 let pricingLinks = document.getElementsByClassName('nav-pricing-link');
 
-
-
 if (window.location.href === DOMAIN + '?pricing=true') {
     document.getElementById('pricing').scrollIntoView();
 }
-
 
 for (let i = 0; i < pricingLinks.length; i++) {
     pricingLinks[i].addEventListener('click', function (e) {

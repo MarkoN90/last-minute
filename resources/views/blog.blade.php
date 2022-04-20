@@ -14,7 +14,7 @@
                             </div>
                             <div class="main-article-text-wrapper">
                                 <div><h3 class="main-article-header">{{ $mainArticle->title }}</h3></div>
-                                <div class="main-article-subtitle">{{ substr($mainArticle->body, 0, 180) }}...</div>
+                                <div class="main-article-subtitle">{{ substr(strip_tags($mainArticle->body), 0, 180) }}...</div>
                             </div>
                         </div>
                     </div>

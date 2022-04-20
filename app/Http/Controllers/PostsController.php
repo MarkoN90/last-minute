@@ -78,7 +78,7 @@ class PostsController extends Controller
     public function show(Posts $posts)
     {
         $otherPosts = DB::table('posts')
-            ->whereNotIn('id',  $posts->id)
+            ->where('id', '!=' ,$posts->id)
             ->get();
 
         return view('post', ['post' => $posts, 'otherPosts' => $otherPosts]);
@@ -94,7 +94,7 @@ class PostsController extends Controller
     public function preview(Posts $posts)
     {
         $otherPosts = DB::table('posts')
-            ->where('id', '=', $posts->id)
+            ->where('id', '!=', $posts->id)
             ->get();
 
         return view('posts.preview', ['post' => $posts, 'otherPosts' => $otherPosts]);
