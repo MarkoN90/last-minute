@@ -4,7 +4,7 @@
             <div class="col-12 col-lg-4 order-1" style="borrder: 1px solid green;">
                 <div class="footer-clock-wrapper text-center text-lg-left">
                     <img src="{{ URL::to('/') }}/images/white-clock.png">
-                </div>
+                </div>H
                 <div>
                     <h2 class="text-white footer-header text-center text-lg-left" >
                         Short Last Minute English objective,

@@ -28,14 +28,16 @@
         <div id="" class="container text-center my-5 d-block d-md-none">
             <img id="girl-illustration" height="260" src="{{ asset('images/') }}/girl-illustration.png">
             <div class="container my-5">
-                <button class="action-button">Start studying</button>
-                <button class="action-button">Free stuff</button>
+                <button class="action-button" style="margin-left: 0px; margin-right: 0px;">Start studying</button>
+                <button class="action-button" style="margin-right: 0px; margin-left: 0px;">Free stuff</button>
             </div>
         </div>
 
         <div class="container-fluid bg-gray py-5 position-relative" style="z-index: -150;">
-            <span id="circle-pointer position-relative d-block" style="z-index: 100;  width: 100%; top: -30px; text-align: center; display: flex; justify-content: center; padding: 0px; margin: 0px;">
-                <div class="text-white" style="z-index: 100; background: #f8f9fb; height: 60px; width: 60px; top:-30px;  position: absolute; border-radius:40px; padding: 0px; margin: 0px;">&or;</div>
+            <span id="circle-pointer position-relative d-block" style="z-index: 100;  width: 100%; top: -40px; text-align: center; display: flex; justify-content: center; padding: 0px; margin: 0px;">
+                <div class="text-white" style="z-index: 100; background: #f8f9fb; height: 80px; width: 80px; top:-40px;  position: absolute; border-radius:40px; padding: 0px; margin: 0px;">
+                    <div style="border: 2px solid black;  height: 40px; width: 40px; margin: auto; margin-top: 20px; font-size: 20px; border-radius: 20px; color:black; font-weight: bold;"><img width="20" src="{{ asset('images/') }}/down-black-arrow.png""></div>
+                </div>
             </span>
             <div class="container ">
                 <h3 class="text-center header-dark-blue main-section-header">Overview Header</h3>
@@ -43,25 +45,25 @@
                     <div class="col-12 col-lg-8 offset-lg-2">
                         <p class="paragraph-gray p-4 main-paragraph">A short and informative few sentences or a paragraph about what the International English Language Testing System is and how Last Minute English can solve the visitors problem.</p>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 text-center">
                         <img id="boy-illustration" src="{{ asset('images/') }}/boy-illustration.png">
                     </div>
-                    <div class="class=col-12 col-md-6 pt-5">
+                    <div class="col-12 col-md-6 pt-5">
                         <div class="row">
                             <div class="col-12">
                                 <h1 class="header-dark-blue section-header">IELTS Complete Guide</h1>
 
                                 <div class="d-flex align-item-center benefits-list-item-wrapper">
-                                    <div class="green-circle-2 mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">Step-by-step study journey</div>
+                                    <div class="green-circle-guide mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">Step-by-step study journey</div>
                                 </div>
                                 <div class="d-flex align-item-center benefits-list-item-wrapper">
-                                    <div class="green-circle-2 mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">Starting from $13.99</div>
+                                    <div class="green-circle-guide mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">Starting from $13.99</div>
                                 </div>
                                 <div class="d-flex align-item-center benefits-list-item-wrapper">
-                                    <div class="green-circle-2 mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">No risk - 30 days guarantee</div>
+                                    <div class="green-circle-guide mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">No risk - 30 days guarantee</div>
                                 </div>
                                 <div class="d-flex align-item-center benefits-list-item-wrapper">
-                                    <div class="green-circle-2 mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">Everything you need for IELTS</div>
+                                    <div class="green-circle-guide mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue benefits-list-item mx-2">Everything you need for IELTS</div>
                                 </div>
                             </div>
                         </div>
@@ -69,9 +71,9 @@
                 </div>
             </div>
         </div>
-        <div class="container p-5 mt-5">
+        <div class="container p-0 p-md-5 mt-5">
             <div class="">
-                <h1 class="p-5 text-center" id="main-title" style="">Why Last Minute <span style="" id="main-title-ielts"> English</span>?</h1>
+                <h1 class="p-2 p-md-5 text-center" id="main-title" style="">Why Last Minute <span style="" id="main-title-ielts"> English</span>?</h1>
             </div>
         </div>
         <div class="container">

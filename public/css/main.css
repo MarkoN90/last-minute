@@ -239,7 +239,7 @@ nav {
     letter-spacing: -2px;
 }
 
-.green-circle-2 {
+.green-circle-guide {
     margin-top: 5px;
     border-radius: 20px;
     height: 30px;
@@ -484,6 +484,7 @@ footer {
     }
 
     #menu-icon {
+        margin-top: -5px;
         font-size: 33px;
     }
 
@@ -525,6 +526,7 @@ footer {
         text-align: center;
         letter-spacing: -1.5px;
         color: #8991a9;
+        font-size: 24px;
     }
 
     #main-title-ielts {
@@ -535,9 +537,6 @@ footer {
         color: #0cc191;
 
     }
-
-
-
 
     #girl-illustration {
         margin-top: 0px;
@@ -550,6 +549,8 @@ footer {
     .main-section-header {
         font-weight: 700;
         padding-top: 70px;
+        font-size: 25px;
+        font-weight: 700;
     }
 
     .main-paragraph {
@@ -557,10 +558,11 @@ footer {
         text-align: center;
         font-weight: 600;
         line-height: 30px;
+        font-size: 16px;
     }
 
     #boy-illustration {
-        height: 260px;
+        height: 200px;
     }
 
     .section-header {
@@ -570,7 +572,7 @@ footer {
         font-size: 35px;
     }
     .benefits-list-item-wrapper {
-         padding: 15px;
+         /*padding: 15px;*/
          margin-right: 20px;
          padding-top: 10px;
      }
@@ -579,6 +581,17 @@ footer {
         font-weight: 500;
         font-size: 18px;
     }
+
+    .green-circle-guide {
+        border-radius: 20px;
+        height: 23px;
+        background: #0cc191;
+        display: inline-block;
+        width: 23px;
+        font-size: 11px;
+    }
+
+
 
 }
 
@@ -598,7 +611,7 @@ nav {
 
 .header-dark-blue {
     color: #09163b;
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 .paragraph-gray {
@@ -653,6 +666,7 @@ nav {
     font-weight: 700;
     letter-spacing: 1px;
     margin: 0px 12px;
+    margin-bottom: 5px;
     width: 165px;
 }
 
@@ -666,18 +680,6 @@ nav {
     letter-spacing: 1px;
     margin: 0px 12px;
     width: 165px;
-}
-
-.main-section-header {
-    font-weight: 700;
-    padding-top: 70px;
-}
-
-.main-paragraph {
-    text-indent: 20px;
-    text-align: center;
-    font-weight: 600;
-    line-height: 30px;
 }
 
 
@@ -867,6 +869,7 @@ nav {
     /* margin: 20px 10px; */
     align-items: center;
     justify-content: center;
+    padding-left: 0px;
 }
 
 .social-icons-list li {
