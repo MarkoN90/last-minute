@@ -27,7 +27,7 @@
         </div>
         <div id="" class="container text-center my-5 d-block d-md-none">
             <img id="girl-illustration" height="260" src="{{ asset('images/') }}/girl-illustration.png">
-            <div class="container my-5">
+            <div class="container my-5 bp-4">
                 <button class="action-button" style="margin-left: 0px; margin-right: 0px;">Start studying</button>
                 <button class="action-button" style="margin-right: 0px; margin-left: 0px;">Free stuff</button>
             </div>

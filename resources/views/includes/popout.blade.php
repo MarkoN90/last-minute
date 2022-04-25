@@ -5,7 +5,7 @@
             <h3 style="font-weight: 900;" class="text-white">Subscribe And Get Awesome Freebies!</h3>
         </div>
         <div style="display: flex" class="row">
-            <div class="px-5 py-3 col-12 col-md-6 text-center" >
+            <div class="px-5 py-0 py-md-3 col-12 col-md-6 text-center" >
                 <img src="{{ URL::to('/') }}/images/popout-img.png">
             </div>
             <div class="col-12 col-md-6">

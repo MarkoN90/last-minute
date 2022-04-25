@@ -92,7 +92,7 @@ nav {
 }
 
 #mobile-nav ul {
-    margin-top: 100px;
+    margin-top: 90px;
     text-align: center;
 }
 
@@ -317,9 +317,6 @@ footer {
     margin-top: 120px !important;
 }
 
-.social-icons-wrapper {
-    margin-top: 120px;
-}
 
 .article-info {
     display: flex;
@@ -857,14 +854,12 @@ nav {
     border-bottom-right-radius: 5px;
 }
 
-
-
 .footer-nav li {
     margin-top: 15px;
 }
 
-
 .social-icons-list {
+    margin-top: 50px !important;
     display: flex;
     /* margin: 20px 10px; */
     align-items: center;
