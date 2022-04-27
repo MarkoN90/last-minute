@@ -27,7 +27,7 @@
         </div>
         <div id="" class="container text-center my-5 d-block d-md-none">
             <img id="girl-illustration" height="260" src="{{ asset('images/') }}/girl-illustration.png">
-            <div class="container my-5 bp-4">
+            <div class="container my-5 pb-4">
                 <button class="action-button" style="margin-left: 0px; margin-right: 0px;">Start studying</button>
                 <button class="action-button" style="margin-right: 0px; margin-left: 0px;">Free stuff</button>
             </div>
@@ -177,23 +177,27 @@
                         <div><img width="180" src="{{ asset('images/') }}/review1.png"></div>
                         <h3 class="testimonial-card-main-title">Anthony</h3>
                         <h4 class="testimonial-card-subtitle">Took IELTS General in 2021. Now working in Canada</h4>
-                        <button class="action-button-2 mt-2">Read more</button>
+                        <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
-                        <div><img width="180" src="{{ asset('images/') }}/review1.png"></div>
+                        <div><img width="180" src="{{ asset('images/') }}/Jack Illustration.png"></div>
                         <h3 class="testimonial-card-main-title">Anthony</h3>
                         <h4 class="testimonial-card-subtitle">Took IELTS General in 2021. Now working in Canada</h4>
-                        <button class="action-button-2 mt-2">Read more</button>
+                        <p class="full-testimonial-text" style="display: none;">
+                            lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                        </p>
+                        <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
-                        <div><img width="180" src="{{ asset('images/') }}/review1.png"></div>
+                        <div><img width="180" src="{{ asset('images/') }}/Lauren Illustration.png"></div>
                         <h3 class="testimonial-card-main-title">Anthony</h3>
                         <h4 class="testimonial-card-subtitle">Took IELTS General in 2021. Now working in Canada</h4>
-                        <button class="action-button-2 mt-2">Read more</button>
+                        <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
                     </div>
                 </div>
             </div>
@@ -392,6 +396,23 @@
         document.getElementById('sign-up-home').addEventListener('click',  (e) => {
             popoutLayer.style.display = 'flex';
         })
+
+        let testimonialsBtn = document.getElementsByClassName('read-more-testimonials');
+
+        for (let i=0; i < testimonialsBtn.length; i++) {
+
+            testimonialsBtn[i].addEventListener('click', (e) => {
+
+                let testimonialsDiv = e.target.parent;
+                if(testimonialsDiv[i].classList.includes('open')) {
+
+                    testimonialsDiv.getElementsByClassName('full-testimonial-text')[0];
+
+                    testimonialsDiv.display = 'block';
+                }
+            });
+        }
+
 
     </script>
 @endsection
