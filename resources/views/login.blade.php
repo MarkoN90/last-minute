@@ -47,11 +47,20 @@
                     <div class="mb-3 text-start"><label class="form-label" for="password">Password</label>
                         <div class="form-icon-container"><input class="form-control form-icon-input" name="password" type="password" placeholder="Password"><span class="fas fa-user text-900 fs--1 form-icon"></span></div>
                     </div>
+                    <div class="" style="text-align: center; font-size: small;">
+                        @if($errors->any())
+                            <h6>{{$errors->first()}}</h6>
+                        @endif
+                    </div>
                     <div class="row flex-between-center mb-7">
                         <div class="col-auto">
                             <div class="form-check mb-0"><input class="form-check-input" id="basic-checkbox" type="checkbox" checked="checked"><label class="form-check-label mb-0" for="basic-checkbox">Remember me</label></div>
                         </div>
-                    </div><button type="submit" class="btn btn-primary w-100 mb-3">Sign In</button>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary w-100 mb-3">Sign In</button>
                 </form>
 
              </div>
