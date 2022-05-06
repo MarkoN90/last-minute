@@ -171,20 +171,25 @@
         <div class="container">
             <h3 id="big-header-2" class="text-center header-dark-blue main-section-header mt-5">Meet Our Students</h3>
             <p class="paragraph-gray px-4 main-paragraph">A short and informative few sentences or a paragraph introducing students with success stories due to Last Minute English.</p>
-            <div class="row">
+            <div class="row position-relative">
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
-                        <div><img width="180" src="{{ asset('images/') }}/review1.png"></div>
+                        <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/review1.png"></div>
                         <h3 class="testimonial-card-main-title">Anthony</h3>
-                        <h4 class="testimonial-card-subtitle">Took IELTS General in 2021. Now working in Canada</h4>
+                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS General in 2021. Now working in Canada</h4>
+                        <p class="full-testimonial-text" style="display: none;">
+                            lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                        </p>
+
                         <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
-                        <div><img width="180" src="{{ asset('images/') }}/Jack Illustration.png"></div>
+                        <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/Jack Illustration.png"></div>
                         <h3 class="testimonial-card-main-title">Anthony</h3>
-                        <h4 class="testimonial-card-subtitle">Took IELTS General in 2021. Now working in Canada</h4>
+                        <h4 class="testimonial-card-subtitle  pb-3">Took IELTS General in 2021. Now working in Canada</h4>
                         <p class="full-testimonial-text" style="display: none;">
                             lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
                             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
@@ -194,10 +199,35 @@
                 </div>
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
-                        <div><img width="180" src="{{ asset('images/') }}/Lauren Illustration.png"></div>
+                        <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/Lauren Illustration.png"></div>
                         <h3 class="testimonial-card-main-title">Anthony</h3>
-                        <h4 class="testimonial-card-subtitle">Took IELTS General in 2021. Now working in Canada</h4>
+                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS General in 2021. Now working in Canada</h4>
+                        <p class="full-testimonial-text" style="display: none;">
+                            lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                        </p>
                         <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
+                    </div>
+                </div>
+                <div class="testimonial-bubble-wrapper">
+                    <div class="testimonial-bubble position-relative" >
+                        <div class="image-wrapper"><img class="testimonial-image" width="140" src="{{ asset('images/') }}/review1.png"></div>
+                        <div>
+                            <h3 class="p-5 pt-0">Anthony</h3>
+                            <p class="p-5 pt-0 pb-4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                <br>
+                                <br>
+
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            <div class="arrow-down-black"></div>
+
+                            <div class="arrow-down"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -403,16 +433,54 @@
 
             testimonialsBtn[i].addEventListener('click', (e) => {
 
-                let testimonialsDiv = e.target.parent;
-                if(testimonialsDiv[i].classList.includes('open')) {
+                let testimonialsDiv = e.target.parentElement;
+                window.testimonialsDiv = testimonialsDiv;
 
-                    testimonialsDiv.getElementsByClassName('full-testimonial-text')[0];
+                if(testimonialsDiv.classList.contains('open')) {
 
-                    testimonialsDiv.display = 'block';
+                    if (window.innerWidth < 1024) {
+                        showTestimonialMobile(e);
+                    } else {
+                        showTestimonialDesktop(e);
+                    }
+
+
+                    testimonialsDiv.classList.remove('open');
+
+                } else {
+
+                    if (window.innerWidth < 1024) {
+                        showTestimonialMobile(e);
+                    } else {
+                        showTestimonialDesktop(e);
+                    }
+
+                    testimonialsDiv.classList.add('open');
+
                 }
             });
         }
 
+        function showTestimonialMobile(e) {
+
+                console.log(window.innerWidth);
+
+                let fullTestimonial = testimonialsDiv.getElementsByClassName('full-testimonial-text')[0];
+                let shortTestimonial = testimonialsDiv.getElementsByClassName('testimonial-card-subtitle')[0];
+                let testimonialImage = testimonialsDiv.getElementsByClassName('testimonial-image')[0];
+
+                e.target.innerHTML = 'Read more';
+                shortTestimonial.style.display = 'block';
+                fullTestimonial.style.display = 'none';
+                testimonialImage.style.width = '180px';
+
+            }
+
+        function showTestimonialDesktop(e) {
+
+            let testimonialBubbleWrapper = document.getElementsByClassName('testimonial-bubble-wrapper')[0];
+            testimonialBubbleWrapper.style.display = 'block';
+        }
 
     </script>
 @endsection
