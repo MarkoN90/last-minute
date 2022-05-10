@@ -9,14 +9,16 @@
             <div class="container mt-3">
                 <div class="row d-inline">
                     <div class="col-12">
-                        <div class="main-article">
-                            <div class="main-article-photo" style="background-image: url('{{ URL::to('/') }}/images/{{ $mainArticle->image_name }}');">
+                        <a href="/post/{{ $mainArticle->id }}">
+                            <div class="main-article">
+                                <div class="main-article-photo" style="background-image: url('{{ URL::to('/') }}/images/{{ $mainArticle->image_name }}');">
+                                </div>
+                                <div class="main-article-text-wrapper">
+                                    <div><h3 class="main-article-header">{{ $mainArticle->title }}</h3></div>
+                                    <div class="main-article-subtitle">{{ substr(strip_tags($mainArticle->body), 0, 180) }}...</div>
+                                </div>
                             </div>
-                            <div class="main-article-text-wrapper">
-                                <div><h3 class="main-article-header">{{ $mainArticle->title }}</h3></div>
-                                <div class="main-article-subtitle">{{ substr(strip_tags($mainArticle->body), 0, 180) }}...</div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

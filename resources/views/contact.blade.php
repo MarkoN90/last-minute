@@ -14,17 +14,17 @@
             <div class="row">
                 <div class="col-6 offset-3 col-md-12 offset-md-0 contact-green-line my-4"></div>
             </div>
-            <div class="row mb-5">
+            <div class="row mb-5 pb-5">
                 <div class="col-12 col-md-6">
                     <form class="mt-2 pb-4">
                         <div class="form-group text-center">
-                            <input type="text" class="popout-input" placeholder="First Name">
+                            <input type="text" class="popout-input" placeholder="First Name*">
                         </div>
                         <div class="form-group text-center">
-                            <input type="text" class="popout-input" placeholder="Last Name">
+                            <input type="text" class="popout-input" placeholder="Last Name*">
                         </div>
                         <div class="form-group text-center">
-                            <input type="text" class="popout-input" placeholder="Email Address">
+                            <input type="text" class="popout-input" placeholder="Email Address*">
                         </div>
                         <div class="form-group text-center">
                             <textarea  rows="10" class="popout-input">
@@ -37,12 +37,13 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <h4 class="p-3">Connect With Us</h4>
-                    <ul class="text-white social-icons-list">
-                        <li class="m-3"><a><i class="fab fa-instagram" style="color:black;"></i></a></li>
-                        <li class="m-3"><a><i class="fab fa-facebook-square " style="color:black;"></i></a></li>
-                        <li class="m-3"><a><i class="fab fa-linkedin " style="color:black;"></i></a></li>
-                        <li class="m-3"><a><i class="fab fa-youtube " style="color:black;"></i></a></li>
+                    <ul class="text-white social-icons-list-about">
+{{--                        <li class="m-3"><a><i class="fab fa-instagram" style="color:black;"></i></a></li>--}}
+                        <li class="m-3"><a href="https://www.facebook.com/lastminuteenglishofficial" ><i class="fab fa-facebook-square" style="color:black;"></i></a></li>
+                        <li class="m-3"><a href="https://cn.linkedin.com/in/francis-carlisl"><i class="fab fa-linkedin" style="color:black;"></i></a></li>
+                        <li class="m-3"><a href=https://www.youtube.com/c/LastMinuteEnglish" ><i class="fab fa-youtube" style="color:black;"></i></a></li>
                     </ul>
+                    <img style="width: 100%;" src="{{ URL::to('/') }}/images/Illustration.png">
                 </div>
             </div>
         </div>

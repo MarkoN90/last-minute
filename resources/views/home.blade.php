@@ -349,7 +349,7 @@
                                 </div>
                             </div>
                             <div class="text-center" style="padding-top: 30px;">
-                                <button class="action-button-2">Start now</button>
+                                <button id="pricing-pop" class="action-button-2">Start now</button>
                             </div>
                         </div>
                     </div>
@@ -621,6 +621,11 @@
                         testimonialBubbleWrapper.style.display = 'none';
                         testimonialsDiv.classList.remove('open');
                 }
+        })
+
+
+        document.getElementById('pricing-pop').addEventListener('click', (e) => {
+            popoutLayer.style.display = 'flex';
         })
 
     </script>

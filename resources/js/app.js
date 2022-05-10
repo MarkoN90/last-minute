@@ -2,8 +2,21 @@ require('./bootstrap');
 
 import axios from "axios";
 
+
+
 const DOMAIN            = 'https://lastminuteenglish.org/'
 const ORIGINAL_LOCATION = window.location.href;
+
+
+let popoutLayer = document.getElementById('overlay');
+
+setTimeout(() => {
+    if (!sessionStorage.hasOwnProperty("pop")) {
+        sessionStorage.setItem('pop', 'yes');
+
+        popoutLayer.style.display = 'flex';
+    }
+}, 7000)
 
 let mobileNav = document.getElementById('mobile-nav');
 
@@ -21,7 +34,6 @@ document.getElementById('mobile-nav').addEventListener('resize',  (e) => {
     }
 })
 
-let popoutLayer = document.getElementById('overlay');
 
 let popout = document.getElementById('popout');
 

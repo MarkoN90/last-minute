@@ -44,17 +44,23 @@
                  </div>
             </div>
         </div>
-        <div class="container-fluid" style="height:520px;">
+        <div class="container-fluid">
+            <div class="container">
             <div class="row">
                 <div class="col-4 offset-4 col-md-4" style="background: #0cc291; height: 3px; margin-top: 100px; margin-bottom: 35px"></div>
             </div>
-            <blockquote class="p-4">
-                "Big bold testimonials from a happy customer, can be used to share or repeat  a nice detail about Last Minute English"
-            </blockquote>
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <blockquote class="p-4" id="big-header">
+                            "Big bold testimonials from a happy customer, can be used to share or repeat  a nice detail about Last Minute English"
+                        </blockquote>
+                    </div>
+                </div>
             <div class="qoute-author">Tommy Brabham</div>
-            <div class="qoute-author-company">Designer of Websites, Warpaint Agency</div>
-            <div>
-                <h3></h3>
+            <div class="qoute-author-company pb-5">Designer of Websites, Warpaint Agency</div>
+            <div class="p-lg-5">
+
+            </div>
             </div>
         </div>
         @include('includes.footer')

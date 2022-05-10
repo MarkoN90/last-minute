@@ -72,6 +72,10 @@
     padding: 10px
 }
 
+.popout-input::placeholder {
+    font-weight: bold;
+}
+
 .square-action-button {
     background-color: #0cc191;
     border: none;
@@ -385,7 +389,7 @@ footer {
 
 .main-article {
     /*border: 1px solid red;*/
-    margin: 30px;
+    /*margin: 30px;*/
     border-radius: 15px;
 }
 
@@ -582,6 +586,21 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+
+    #big-header {
+        font-size: 34px;
+        font-weight: bold;
+        padding: 45px;
+        letter-spacing: -0.7px;
+    }
+
+    #big-header-2 {
+        font-size: 34px;
+        font-weight: bold;
+        padding: 45px;
+        letter-spacing: -0.7px;
+    }
+
 
     nav {
         height: 55px;
@@ -836,6 +855,7 @@ nav {
 .pricing-header {
     padding: 67px;
     font-size: 36px;
+    font-weight: bold;
 }
 .pricing-card {
     /*border: 1px solid red;*/
@@ -952,7 +972,16 @@ nav {
     padding-left: 0px;
 }
 
-.social-icons-list li {
+.social-icons-list-about {
+    margin-top: 20px !important;
+    display: flex;
+    /* margin: 20px 10px; */
+    align-items: start;
+    justify-content: start;
+    padding-left: 0px;
+}
+
+.social-icons-list li,  .social-icons-list-about li{
     display: inline-block;
     font-size: 30px;
     margin: 0px 10px;

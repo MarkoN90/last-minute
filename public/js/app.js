@@ -19398,6 +19398,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var DOMAIN = 'https://lastminuteenglish.org/';
 var ORIGINAL_LOCATION = window.location.href;
+var popoutLayer = document.getElementById('overlay');
+setTimeout(function () {
+  if (!sessionStorage.hasOwnProperty("pop")) {
+    sessionStorage.setItem('pop', 'yes');
+    popoutLayer.style.display = 'flex';
+  }
+}, 7000);
 var mobileNav = document.getElementById('mobile-nav');
 document.getElementById('menu-icon').addEventListener('click', function (e) {
   mobileNav.style.display = 'block';
@@ -19410,7 +19417,6 @@ document.getElementById('mobile-nav').addEventListener('resize', function (e) {
     e.target.style.display = 'none';
   }
 });
-var popoutLayer = document.getElementById('overlay');
 var popout = document.getElementById('popout');
 var closePopout = document.getElementById('close-popout');
 closePopout.addEventListener('click', function (e) {

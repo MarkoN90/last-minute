@@ -44,13 +44,16 @@
                             <h1 class="text-center" id="main-title-post">Get <span id="main-title-ielts-post">IELTS</span> done.</h1>
                             <h2 class="text-center" id="main-subtitle-post">No worry, no pain, no problem.</h2>
                             <div class="form-group text-center">
-                                <button class="popout-input square-action-button" style="width: 250px">Start Studying</button>
+                                <a href="/">
+                                    <button class="popout-input square-action-button" style="width: 250px">Start Studying</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
             <div class="container mt-3">
+                <h3 id="big-header" class="text-center header-dark-blue pt-5">Keep Reading</h3>
                 <div class="row">
                     @foreach($otherPosts as $post)
                         <div class="col-12 col-md-4">
