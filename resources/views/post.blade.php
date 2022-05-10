@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8 offset-2">
+                    <div class=" col-12 col-md-8 offset-md-2">
                         <div class="post-text last-minute-dark-blue">
                             {!! $post->body !!}
                         </div>
