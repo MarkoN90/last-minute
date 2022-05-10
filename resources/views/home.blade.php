@@ -232,7 +232,7 @@
                             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
                         </p>
 
-                        <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
+                        <button class="action-button-2 mt-2 read-more-testimonials" data-no="first" data-name="Anthony">Read more</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
@@ -244,7 +244,7 @@
                             lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
                             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
                         </p>
-                        <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
+                        <button class="action-button-2 mt-2 read-more-testimonials" data-no="second" data-name="Jack">Read more</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
@@ -256,14 +256,14 @@
                             lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
                             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
                         </p>
-                        <button class="action-button-2 mt-2 read-more-testimonials">Read more</button>
+                        <button class="action-button-2 mt-2 read-more-testimonials" data-no="third" data-name="Lauren">Read more</button>
                     </div>
                 </div>
-                <div class="testimonial-bubble-wrapper">
+                <div class="testimonial-bubble-wrapper" data-url="{{ asset('images/') }}/">
                     <div class="testimonial-bubble position-relative" >
-                        <div class="image-wrapper"><img class="testimonial-image" width="140" src="{{ asset('images/') }}/review1.png"></div>
+                        <div class="image-wrapper"><img id="testimonial-image" width="140" src="{{ asset('images/') }}/review1.png"></div>
                         <div>
-                            <h3 class="p-5 pt-0">Anthony</h3>
+                            <h3 class="p-5 pt-0 " id="bubble-name">Anthony</h3>
                             <p class="p-5 pt-0 pb-4">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -274,9 +274,8 @@
                                 remaining essentially unchanged. It was popularised in the 1960s with the release of
                                 like Aldus PageMaker including versions of Lorem Ipsum.
                             </p>
-                            <div class="arrow-down-black"></div>
-
-                            <div class="arrow-down"></div>
+                            <div id="arrow-down-black" class="arrow-down-black"></div>
+                            <div id="arrow-down" class="arrow-down"></div>
                         </div>
                     </div>
                 </div>
@@ -471,17 +470,26 @@
 
         const testimonials = {
             first: {
-                image: "Jack Illustration.png",
+                image: "review1.png",
+                arrowOffset: '90px',
+
             },
             second: {
-                image: "Lauren Illustration.png",
+                image: "Jack Illustration.png",
+                arrowOffset: '530px',
+
             },
             third: {
-                image: "review1.png",
+                image: "Lauren Illustration.png",
+                arrowOffset: '970px',
+
             }
         }
 
         let popoutLayer = document.getElementById('overlay');
+
+        const arrowBlackDown = document.getElementById('arrow-down-black');
+        const arrowDown      = document.getElementById('arrow-down');
 
         document.getElementById('free-stuff-btn').addEventListener('click',  (e) => {
             popoutLayer.style.display = 'flex';
@@ -508,15 +516,17 @@
 
             testimonialsBtn[i].addEventListener('click', (e) => {
 
+                e.stopPropagation();
+
                 let testimonialsDiv = e.target.parentElement;
                 window.testimonialsDiv = testimonialsDiv;
 
                 if(testimonialsDiv.classList.contains('open')) {
 
                     if (window.innerWidth < 1024) {
-                        showTestimonialMobile(e);
+                        closeTestimonialMobile(e);
                     } else {
-                        showTestimonialDesktop(e);
+                        closeTestimonialDesktop(e);
                     }
 
                     testimonialsDiv.classList.remove('open');
@@ -530,7 +540,6 @@
                     }
 
                     testimonialsDiv.classList.add('open');
-
                 }
             });
         }
@@ -543,18 +552,76 @@
                 let shortTestimonial = testimonialsDiv.getElementsByClassName('testimonial-card-subtitle')[0];
                 let testimonialImage = testimonialsDiv.getElementsByClassName('testimonial-image')[0];
 
-                e.target.innerHTML = 'Read more';
-                shortTestimonial.style.display = 'block';
-                fullTestimonial.style.display = 'none';
-                testimonialImage.style.width = '180px';
+                e.target.innerHTML = 'Read less';
+                shortTestimonial.style.display = 'none';
+                fullTestimonial.style.display = 'block';
+                testimonialImage.style.width = '160px';
 
             }
 
+
+        function closeTestimonialMobile(e) {
+
+            console.log(window.innerWidth);
+
+            let fullTestimonial = testimonialsDiv.getElementsByClassName('full-testimonial-text')[0];
+            let shortTestimonial = testimonialsDiv.getElementsByClassName('testimonial-card-subtitle')[0];
+            let testimonialImage = testimonialsDiv.getElementsByClassName('testimonial-image')[0];
+
+            e.target.innerHTML = 'Read more';
+            shortTestimonial.style.display = 'block';
+            fullTestimonial.style.display = 'none';
+            testimonialImage.style.width = '180px';
+
+        }
+
+
         function showTestimonialDesktop(e) {
+            e.target.innerHTML = 'Read less';
 
             let testimonialBubbleWrapper = document.getElementsByClassName('testimonial-bubble-wrapper')[0];
+            let url = testimonialBubbleWrapper.getAttribute('data-url');
+
+            console.log(url);
+            let bubbleImage = document.getElementById('testimonial-image');
+            let bubbleName = document.getElementById('bubble-name');
+
+            bubbleName.innerHTML = e.target.getAttribute('data-name');
+
+            let imagePath = url + testimonials[e.target.getAttribute('data-no')].image;
+
+            bubbleImage.setAttribute('src', imagePath);
+
+            arrowBlackDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffset;
+            arrowDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffset;
+
             testimonialBubbleWrapper.style.display = 'block';
         }
+
+        function closeTestimonialDesktop(e) {
+            e.target.innerHTML = 'Read more';
+
+            let testimonialBubbleWrapper = document.getElementsByClassName('testimonial-bubble-wrapper')[0];
+            let url = testimonialBubbleWrapper.getAttribute('data-url');
+
+            testimonialBubbleWrapper.style.display = 'none';
+        }
+
+
+        document.addEventListener('click', function(e) {
+
+            // alert('hi');
+
+            for (let i=0; i < testimonialsBtn.length; i++) {
+
+                testimonialsBtn[i].innerHTML = 'Read more';
+                    let testimonialsDiv = e.target.parentElement;
+                    window.testimonialsDiv = testimonialsDiv;
+                        let testimonialBubbleWrapper = document.getElementsByClassName('testimonial-bubble-wrapper')[0];
+                        testimonialBubbleWrapper.style.display = 'none';
+                        testimonialsDiv.classList.remove('open');
+                }
+        })
 
     </script>
 @endsection
