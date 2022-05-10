@@ -21,6 +21,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/test', function () {
+
+
+
+    return view('test');
+});
+
+
 Route::get('/', function () {
 
    $link = DB::table('settings')

@@ -32,7 +32,7 @@ closePopout.addEventListener('click', (e) => {
 })
 
 document.getElementById('nav-start-btn').addEventListener('click',  (e) => {
-    popoutLayer.style.display = 'flex';
+    document.getElementById('pricing').scrollIntoView();
 })
 
 

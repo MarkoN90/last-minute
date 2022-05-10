@@ -28,6 +28,32 @@
     font-weight: 900;
  }
 
+
+.qoute-section {
+    padding-bottom: 180px;
+}
+
+.home-quote {
+    font-size: 55px;
+    line-height: 59px;
+    letter-spacing: -2px;
+}
+
+#big-header {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 45px;
+    letter-spacing: -0.7px;
+}
+
+#big-header-2 {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 45px;
+    letter-spacing: -0.7px;
+}
+
+
 #close-popout {
     position: absolute;
     font-size: 33px;
@@ -212,12 +238,12 @@ nav {
     text-indent: 20px;
     text-align: center;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 40px;
     font-size: 23px;
 }
 
 #boy-illustration {
-    height: 400px;
+    height: 350px;
 }
 
 .section-header {
@@ -229,6 +255,7 @@ nav {
 
 .benefits-list-item-wrapper {
     margin:20px;
+    /*margin-right: 30px;*/
     margin-left: 40px;
 
 }
@@ -240,13 +267,15 @@ nav {
 }
 
 .green-circle-guide {
-    margin-top: 5px;
+    margin-top: 8px;
     border-radius: 20px;
     height: 30px;
     background: #0cc191;
     display: inline-block;
     width: 30px;
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 10px;
+    padding-top:2px;
 }
 
 
@@ -504,6 +533,18 @@ footer {
 
 @media only screen and (max-width: 850px) {
 
+
+    .footer-header {
+        text-align: center;
+    }
+
+    .footer-clock-wrapper {
+        text-align: center;
+        padding: 45px;
+        /*text-align: center;*/
+    }
+
+
     .main-nav li {
         display: none;
     }
@@ -602,7 +643,7 @@ footer {
     }
 
     #boy-illustration {
-        height: 200px;
+        height: 180px;
     }
 
     .section-header {
@@ -632,6 +673,15 @@ footer {
     }
 
 
+    .footer-header {
+        text-align: center !important;
+    }
+
+    .footer-clock-wrapper {
+        text-align: center !important;
+        padding: 45px;
+        /*text-align: center;*/
+    }
 
 }
 
@@ -746,17 +796,8 @@ nav {
     font-size: 17px;
 }
 
-#big-header {
-    font-size: 34px;
-    padding: 45px;
-    letter-spacing: -0.7px;
-}
 
-#big-header-2 {
-    font-size: 34px;
-    padding-top: 45px;
-    letter-spacing: -0.7px;
-}
+
 .included-card-main-title {
     font-size: 19px;
     font-weight: 700;
@@ -859,6 +900,7 @@ nav {
 }
 
 .footer-header {
+    text-align: left;
     line-height: 40px;
     font-size: 28px;
     font-weight: 400;
@@ -867,7 +909,7 @@ nav {
 }
 
 .footer-clock-wrapper {
-
+    text-align: left;
     padding: 45px;
     /*text-align: center;*/
 }
