@@ -101,29 +101,4 @@ Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
-Route::get('/configure', function () {
-
-    DB::table('settings')->insert([
-        ['setting' => 'Udemy Link', 'slug' => 'udemy_link', 'value' => 'https://udemy.com'],
-    ]);
-
-    DB::table('categories')->insert([
-        ['name' => 'IELTS'],
-        ['name' => 'TOEFL'],
-        ['name' => 'Business English'],
-        ['name' => 'Daily English'],
-    ]);
-
-    $user = new \App\Models\User();
-    $user->password   =  Hash::make('eddblauff');
-    $user->email      = 'franciscarlisle@googlemail.com';
-    $user->name       = 'Francis';
-    $user->last_name  = 'Carlisle';
-    $user->admin = true;
-
-    $user->save();
-
-    echo 'site configured.';
-
-});
 
