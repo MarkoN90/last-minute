@@ -27,8 +27,7 @@
                             <input type="text" class="popout-input" placeholder="Email Address*">
                         </div>
                         <div class="form-group text-center">
-                            <textarea  rows="10" class="popout-input">
-                            </textarea>
+                            <textarea rows="10" class="popout-input" placeholder="Message*"></textarea>
                         </div>
                         <div class="form-group text-center">
                             <button class="popout-input square-action-button">Submit</button>
@@ -40,7 +39,7 @@
                     <ul class="text-white social-icons-list-about">
 {{--                        <li class="m-3"><a><i class="fab fa-instagram" style="color:black;"></i></a></li>--}}
                         <li class="m-3"><a href="https://www.facebook.com/lastminuteenglishofficial" ><i class="fab fa-facebook-square" style="color:black;"></i></a></li>
-                        <li class="m-3"><a href="https://cn.linkedin.com/in/francis-carlisl"><i class="fab fa-linkedin" style="color:black;"></i></a></li>
+                        <li class="m-3"><a href="https://cn.linkedin.com/in/francis-carlisle"><i class="fab fa-linkedin" style="color:black;"></i></a></li>
                         <li class="m-3"><a href=https://www.youtube.com/c/LastMinuteEnglish" ><i class="fab fa-youtube" style="color:black;"></i></a></li>
                     </ul>
                     <img style="width: 100%;" src="{{ URL::to('/') }}/images/Illustration.png">

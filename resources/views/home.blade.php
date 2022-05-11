@@ -77,8 +77,8 @@
         <div id="" class="container text-center my-5 d-block d-md-none">
             <img id="girl-illustration" height="260" src="{{ asset('images/') }}/girl-illustration.png">
             <div class="container my-5 pb-4">
-                <button class="action-button" style="margin-left: 0px; margin-right: 0px;">Start studying</button>
-                <button class="action-button" style="margin-right: 0px; margin-left: 0px;">Free stuff</button>
+                <button class="action-button" id="start-btn-2"    style="margin-left: 0px; margin-right: 0px;">Start studying</button>
+                <button class="action-button" id="free-stuff-btn-2" style="margin-right: 0px; margin-left: 0px;">Free stuff</button>
             </div>
         </div>
 
@@ -606,6 +606,17 @@
 
             testimonialBubbleWrapper.style.display = 'none';
         }
+
+
+        document.getElementById('start-btn-2').addEventListener('click', (e) => {
+            document.getElementById('pricing').scrollIntoView();
+        });
+
+
+        document.getElementById('free-stuff-btn-2').addEventListener('click', (e) => {
+            popoutLayer.style.display = 'flex';
+
+        });
 
 
         document.addEventListener('click', function(e) {

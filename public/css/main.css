@@ -163,7 +163,6 @@ nav {
 }
 
 #main-title {
-
     color: #051138;
     font-size: 85px;
     font-weight: 800;
@@ -171,7 +170,6 @@ nav {
     padding-left: 30px;
     text-align: left;
     letter-spacing: -2px;
-
     /*display: inline;*/
 }
 
@@ -492,11 +490,11 @@ footer {
 }
 
 .testimonial-bubble-wrapper {
+    top:-16px;
     position: absolute;
     display: none;
 
 }
-
 
 
 @media only screen and (max-width: 1600px) {
@@ -536,6 +534,43 @@ footer {
 
 
 @media only screen and (max-width: 850px) {
+
+    .single-post-header {
+        font-size: 25px;
+    }
+
+
+    .main-article {
+        margin: 15px;
+        border-radius: 15px;
+        /*border: 1px solid red;*/
+    }
+
+    .main-article-subtitle {
+        padding: 20px;
+        color: #939ab1;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .main-article-photo {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        height: 180px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-article-header {
+        min-height: 80px;
+        font-size: 22px;
+        padding: 10px 20px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        color: #08143a;
+    }
 
 
     .footer-header {
@@ -582,6 +617,27 @@ footer {
         width: 90%;
 
     }
+
+    #big-header {
+        font-size: 37px;
+        font-weight: bold;
+        padding: 45px;
+        letter-spacing: -0.7px;
+    }
+
+    #big-header-2 {
+        font-size: 37px;
+        font-weight: bold;
+        padding: 45px;
+        letter-spacing: -0.7px;
+    }
+
+    .home-quote {
+        font-size: 33px;
+        line-height: 40px;
+        letter-spacing: -2px;
+    }
+
 }
 
 
@@ -865,6 +921,7 @@ nav {
     border-radius: 10px;
     margin-bottom: 55px;
     background-color: white;
+    padding-bottom: 20px;
 }
 
 .pricing-card-top {
