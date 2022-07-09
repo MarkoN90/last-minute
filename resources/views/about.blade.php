@@ -34,12 +34,18 @@
                     <img style="width: 100%;" src="{{ URL::to('/') }}/images/about-img.png">
                 </div>
                 <div class="col-12 col-md-6">
-                    <h1 class="about-section-header">Lorem Ipsum is simply dummy text of the printing  </h1>
+                    <h1 class="about-section-header">About Us</h1>
 
-                        <p class="about-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-                        of Letraset sheets containing Lorem Ipsum passages,
+                        <p class="about-paragraph">Last Minute English was founded in China in 2019 by Francis Carlisle, a former IELTS examiner
+                            and entrepreneur from the UK, Doris Zhou, an international trade executive, and Tracy Jin, a
+                            software systems expert.
+                            Our mission is to help our students with their specific English need, whatever that need is. We
+                            help students who want to pass English tests like IELTS and TOEFL, as well as businesspeople
+                            who need to improve their Business English in areas from Digital Marketing to International
+                            Trade Negotiations.
+                            We choose our teachers carefully, and believe in quality over quantity. We value honesty and
+                            hard work, and we give our teachers the tools they need to change the lives of students all over
+                            the world.
                         </p>
                  </div>
             </div>

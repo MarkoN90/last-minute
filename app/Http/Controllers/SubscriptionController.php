@@ -49,17 +49,23 @@ class SubscriptionController extends Controller
 
         ]);
 
-        $subscription = Subscription::create([
-            'first_name' => $validated['first_name'],
-            'last_name'  => $validated['last_name'],
-            'email'      => $validated['email'],
-        ]);
+//        $subscription = Subscription::create([
+//            'first_name' => $validated['first_name'],
+//            'last_name'  => $validated['last_name'],
+//            'email'      => $validated['email'],
+//        ]);
 
-//        Mail::send('emails.NewSubscription', ['subscription' => $subscription], function ($m) use ($subscription) {
-//
-//            $m->from('hello@app.com', 'Your Application');
-//            $m->to($subscription->email, $subscription->first_name)->subject('Thank You For Your Subscription');
-//        });
+        $subscription = new Subscription();
+
+        $subscription->first_name = $validated['first_name'];
+        $subscription->last_name  = $validated['last_name'];
+        $subscription->email      = $validated['email'];
+
+        Mail::send('emails.SubsciptionMail', ['subscription' => $subscription], function ($m) use ($subscription) {
+
+            $m->from('hello@lastminuteenglish.org', 'Last Minute English');
+            $m->to($subscription->email, $subscription->first_name)->subject('Thank You For Your Subscription');
+        });
 
         if (!$subscription) {
             return response()->json(

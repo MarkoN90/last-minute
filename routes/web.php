@@ -56,6 +56,12 @@ Route::get('/blog', [PagesController::class, 'blog']);
 
 Route::post('/subscribe', [SubscriptionController::class, 'store']);
 
+
+Route::get('/email', function () {
+    return view('email');
+});
+
+
 // admin
 
 Route::get('/dashboard', function () {

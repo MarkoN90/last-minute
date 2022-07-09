@@ -141,7 +141,7 @@
                                                             <td align="center" style="padding:0;Margin:0;padding-bottom:15px"><h2 style="Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:30px;font-style:normal;font-weight:bold;color:#333333">Thank you for your subscription!</h2></td>
                                                         </tr>
                                                         <tr style="border-collapse:collapse">
-                                                            <td class="es-m-txt-l" align="left" style="padding:0;Margin:0;padding-top:20px"><h3 style="Margin:0;line-height:22px;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:18px;font-style:normal;font-weight:bold;color:#333333"><strong></strong>Hello, {{ $subscription->first_name }}</h3></td>
+                                                            <td class="es-m-txt-l" align="left" style="padding:0;Margin:0;padding-top:20px"><h3 style="Margin:0;line-height:22px;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;font-size:18px;font-style:normal;font-weight:bold;color:#333333"><strong></strong>Hello ,</h3></td>
                                                         </tr>
                                                         <tr style="border-collapse:collapse">
                                                             <td align="left" style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'open sans', 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#777777;font-size:16px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ipsa numquam odio dolores, nam.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ipsa numquam odio dolores, nam.<br><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ipsa numquam odio dolores, nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ipsa numquam odio dolores, nam.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium iste ipsa numquam odio dolores, nam.</p></td>
@@ -156,47 +156,47 @@
                             </table></td>
                     </tr>
                 </table>
-                {{--                <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">--}}
-                {{--                    <tr style="border-collapse:collapse"></tr>--}}
-                {{--                    <tr style="border-collapse:collapse">--}}
-                {{--                        <td align="center" style="padding:0;Margin:0">--}}
-                {{--                            <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#1b9ba3;width:600px" cellspacing="0" cellpadding="0" bgcolor="#1b9ba3" align="center">--}}
-                {{--                                <tr style="border-collapse:collapse">--}}
-                {{--                                    <td align="left" style="Margin:0;padding-top:35px;padding-bottom:35px;padding-left:35px;padding-right:35px">--}}
-                {{--                                        <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
-                {{--                                            <tr style="border-collapse:collapse">--}}
-                {{--                                                <td valign="top" align="center" style="padding:0;Margin:0;width:530px">--}}
-                {{--                                                    <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
-                {{--                                                        <tr style="border-collapse:collapse">--}}
-                {{--                                                            <td align="center" style="padding:0;Margin:0;display:none"></td>--}}
-                {{--                                                        </tr>--}}
-                {{--                                                    </table></td>--}}
-                {{--                                            </tr>--}}
-                {{--                                        </table></td>--}}
-                {{--                                </tr>--}}
-                {{--                            </table></td>--}}
-                {{--                    </tr>--}}
-                {{--                </table>--}}
-                {{--                <table class="es-footer" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">--}}
-                {{--                    <tr style="border-collapse:collapse">--}}
-                {{--                        <td align="center" style="padding:0;Margin:0">--}}
-                {{--                            <table class="es-footer-body" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">--}}
-                {{--                                <tr style="border-collapse:collapse">--}}
-                {{--                                    <td align="left" style="Margin:0;padding-top:35px;padding-left:35px;padding-right:35px;padding-bottom:40px">--}}
-                {{--                                        <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
-                {{--                                            <tr style="border-collapse:collapse">--}}
-                {{--                                                <td valign="top" align="center" style="padding:0;Margin:0;width:530px">--}}
-                {{--                                                    <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
-                {{--                                                        <tr style="border-collapse:collapse">--}}
-                {{--                                                            <td align="center" style="padding:0;Margin:0;display:none"></td>--}}
-                {{--                                                        </tr>--}}
-                {{--                                                    </table></td>--}}
-                {{--                                            </tr>--}}
-                {{--                                        </table></td>--}}
-                {{--                                </tr>--}}
-                {{--                            </table></td>--}}
-                {{--                    </tr>--}}
-                {{--                </table>--}}
+{{--                <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">--}}
+{{--                    <tr style="border-collapse:collapse"></tr>--}}
+{{--                    <tr style="border-collapse:collapse">--}}
+{{--                        <td align="center" style="padding:0;Margin:0">--}}
+{{--                            <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#1b9ba3;width:600px" cellspacing="0" cellpadding="0" bgcolor="#1b9ba3" align="center">--}}
+{{--                                <tr style="border-collapse:collapse">--}}
+{{--                                    <td align="left" style="Margin:0;padding-top:35px;padding-bottom:35px;padding-left:35px;padding-right:35px">--}}
+{{--                                        <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
+{{--                                            <tr style="border-collapse:collapse">--}}
+{{--                                                <td valign="top" align="center" style="padding:0;Margin:0;width:530px">--}}
+{{--                                                    <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
+{{--                                                        <tr style="border-collapse:collapse">--}}
+{{--                                                            <td align="center" style="padding:0;Margin:0;display:none"></td>--}}
+{{--                                                        </tr>--}}
+{{--                                                    </table></td>--}}
+{{--                                            </tr>--}}
+{{--                                        </table></td>--}}
+{{--                                </tr>--}}
+{{--                            </table></td>--}}
+{{--                    </tr>--}}
+{{--                </table>--}}
+{{--                <table class="es-footer" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">--}}
+{{--                    <tr style="border-collapse:collapse">--}}
+{{--                        <td align="center" style="padding:0;Margin:0">--}}
+{{--                            <table class="es-footer-body" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">--}}
+{{--                                <tr style="border-collapse:collapse">--}}
+{{--                                    <td align="left" style="Margin:0;padding-top:35px;padding-left:35px;padding-right:35px;padding-bottom:40px">--}}
+{{--                                        <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
+{{--                                            <tr style="border-collapse:collapse">--}}
+{{--                                                <td valign="top" align="center" style="padding:0;Margin:0;width:530px">--}}
+{{--                                                    <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">--}}
+{{--                                                        <tr style="border-collapse:collapse">--}}
+{{--                                                            <td align="center" style="padding:0;Margin:0;display:none"></td>--}}
+{{--                                                        </tr>--}}
+{{--                                                    </table></td>--}}
+{{--                                            </tr>--}}
+{{--                                        </table></td>--}}
+{{--                                </tr>--}}
+{{--                            </table></td>--}}
+{{--                    </tr>--}}
+{{--                </table>--}}
                 <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
                     <tr style="border-collapse:collapse">
                         <td align="center" style="padding:0;Margin:0">

@@ -89,10 +89,11 @@
                 </div>
             </span>
             <div class="container ">
-                <h3 class="text-center header-dark-blue main-section-header">Overview Header</h3>
+                <h3 class="text-center header-dark-blue main-section-header">Worried about IELTS?</h3>
                 <div class="row">
                     <div class="col-12 col-lg-8 offset-lg-2 pb-lg-5">
-                        <p class="paragraph-gray p-4 main-paragraph">A short and informative few sentences or a paragraph about what the International English Language Testing System is and how Last Minute English can solve the visitors problem.</p>
+                        <p class="paragraph-gray p-4 main-paragraph">Last Minute English makes IELTS easy! Everything you need for IELTS in one
+                            place.</p>
                     </div>
                     <div class="col-12 col-md-6 text-center p-lg-5">
                         <img id="boy-illustration" src="{{ asset('images/') }}/boy-illustration.png">
@@ -163,7 +164,7 @@
                     </div>
                     <div>
                         <h3 class="included-card-main-title">40+ hours of classes</h3>
-                        <h4 class="included-card-subtitle">Support sentence for consistency</h4>
+                        <h4 class="included-card-subtitle">Fun, interactive videos</h4>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 d-flex p-2 included-card-wrapper"  >
@@ -220,7 +221,8 @@
         <div class="container d-none d-lg-block p-5"></div>
         <div class="container">
             <h3 id="big-header-2" class="text-center header-dark-blue main-section-header mt-5">Meet Our Students</h3>
-            <p class="paragraph-gray px-4 main-paragraph">A short and informative few sentences or a paragraph introducing students with success stories due to Last Minute English.</p>
+            <p class="paragraph-gray px-4 main-paragraph">Join over 50,000 students who have achieved IELTS success with Last
+                Minute English</p>
             <div class="row position-relative">
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
@@ -228,8 +230,10 @@
                         <h3 class="testimonial-card-main-title">Anthony</h3>
                         <h4 class="testimonial-card-subtitle pb-3">Took IELTS General in 2021. Now working in Canada</h4>
                         <p class="full-testimonial-text" style="display: none;">
-                            lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
-                            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                            Anthony needed an IELTS Band 7 score to start working as an IELTS trainer in
+                            his hometown. He already knew a lot about the IELTS exam, but he always scored Band
+                            6 or 6.5 in speaking. After taking 1-1 classes with Francis, he was able to score 7.5 in
+                            IELTS speaking, and now teaches IELTS skills to other students. Great work Anthony!
                         </p>
 
                         <button class="action-button-2 mt-2 read-more-testimonials" data-no="first" data-name="Anthony">Read more</button>
@@ -238,11 +242,13 @@
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
                         <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/Jack Illustration.png"></div>
-                        <h3 class="testimonial-card-main-title">Anthony</h3>
+                        <h3 class="testimonial-card-main-title">Paul</h3>
                         <h4 class="testimonial-card-subtitle  pb-3">Took IELTS General in 2021. Now working in Canada</h4>
                         <p class="full-testimonial-text" style="display: none;">
-                            lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsum
-                            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum
+                            Paul wanted to attend a UK university. The university needed him to score a Level
+                            7 or higher overall. After taking the Last Minute English Premium Package, he scored
+                            Band 7.5 overall, including Band 8 in writing. He was able to travel to the UK and is
+                            currently studying a bachelor’s degree in Business. Well done Paul!
                         </p>
                         <button class="action-button-2 mt-2 read-more-testimonials" data-no="second" data-name="Jack">Read more</button>
                     </div>
@@ -263,11 +269,14 @@
                     <div class="testimonial-bubble position-relative" >
                         <div class="image-wrapper"><img id="testimonial-image" width="140" src="{{ asset('images/') }}/review1.png"></div>
                         <div>
-                            <h3 class="p-5 pt-0 " id="bubble-name">Anthony</h3>
+                            <h3 class="p-5 pt-0 " id="bubble-name">Lauren</h3>
                             <p class="p-5 pt-0 pb-4">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lauren lives in Hong Kong and works as an English-Chinese translator. She
+                                needed to take the IELTS exam to prove her English level to her customers. However,
+                                she had trouble with the exam, scoring only Band 6.5 overall. (New paragraph) After
+                                taking the IELTS Premium Package, she scored Band 8 overall, including 7.5 for Writing
+                                and Speaking. She now has more great work opportunities and is considering taking a
+                                Master’s Degree in the UK. Congratulations Lauren!
                                 <br>
                                 <br>
 
@@ -305,23 +314,36 @@
                         <div class="pricing-card position-relative" style="bordder: 1px solid red;">
                             <div class="pricing-card-top pricing-card-top-gray"></div>
                             <div class="package-name-wrap">
-                                <h3 class="package-name-header">IELTS Basic Package</h3>
+                                <h3 class="package-name-header">IELTS Starter Pack</h3>
                                 <h5 class="package-name-price">Free</h5>
                             </div>
                             <div class="package-body">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="d-flex align-item-center   pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Step-by-step study guide</div>
+                                            <div class="green-circle mx-2 text-center text-white">
+                                                <i class="fas fa-check check-sign"></i>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (15, 30, 60 days)</div>
                                         </div>
-                                        <div class="d-flex align-item-center   pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">Starting from $13.99</div>
+                                        <div class="d-flex align-item-center pricing-card-benefit-wrapper">
+                                            <div>
+                                                <div class="green-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Vocabulary List – 10 most common topics</div>
                                         </div>
-                                        <div class="d-flex align-item-center   pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">No risk - 30 days guarantee</div>
+                                        <div class="d-flex align-item-center pricing-card-benefit-wrapper">
+                                            <div>
+                                                <div class="green-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 5 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Classes</div>
+                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div>
@@ -330,20 +352,27 @@
                                                 </div>
                                             </div>
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">
-                                                IELTS Speaking, Writing, Reading, Listening Preparation Courses
+                                                IELTS Speaking, Writing, Reading, Listening Courses
                                             </div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Speaking New Answers</div>
+                                            <div>
+                                                <div class="empty-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">
+                                                IELTS Speaking New Answers (updated every season)
+                                            </div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Writing Arguments E-Book</div>
+                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Writing - Marking</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">Awesome Extra Giveaways</div>
+                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">30-Day Speaking Correction Service</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Writing Test Marking</div>
+                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">1-1 Classes with IELTS Examiner</div>
                                         </div>
                                     </div>
                                 </div>
@@ -360,8 +389,8 @@
                             </div>
                             <div class="pricing-card-top pricing-card-top-light-green"></div>
                             <div class="package-name-wrap">
-                                <h3 class="package-name-header">IELTS Basic Package</h3>
-                                <h5 class="package-name-price">Free</h5>
+                                <h3 class="package-name-header">IELTS Complete Guide</h3>
+                                <h5 class="package-name-price">$13.99 USD</h5>
                             </div>
                             <div class="package-body">
                                 <div class="row">
