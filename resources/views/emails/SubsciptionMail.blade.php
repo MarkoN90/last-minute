@@ -108,7 +108,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" class="image_block" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
                                         <tr>
                                             <td style="padding-bottom:15px;padding-left:5px;padding-right:5px;padding-top:15px;width:100%;">
-                                                <div align="center" style="line-height:10px"><a href="http://example.com" style="outline:none" tabindex="-1" target="_blank"><img alt="Your Logo" src="https://lastminuteenglish.org/images/main-logo.png" style="display: block; height: auto; border: 0; width: 182px; max-width: 100%;" title="Your Logo" width="182"/></a></div>
+                                                <div align="center" style="line-height:10px"><a href="https://lastminuteenglish.org" style="outline:none" tabindex="-1" target="_blank"><img alt="Last Minute English" src="https://lastminuteenglish.org/images/main-logo.png" style="display: block; height: auto; border: 0; width: 182px; max-width: 100%;" title="Your Logo" width="182"/></a></div>
                                             </td>
                                         </tr>
                                     </table>

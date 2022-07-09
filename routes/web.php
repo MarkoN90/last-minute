@@ -107,4 +107,11 @@ Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/logout', [AuthController::class, 'logout'])->middleware('auth');
 
+// download
+
+Route::get('/download/iouelaknkl', [PagesController::class, 'downloadBooklet']);
+
+Route::get('/downloadCheck', [PagesController::class, 'downloadCheck']);
+Route::get('/download-test', [PagesController::class, 'download']);
+
 

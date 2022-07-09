@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Posts;
 use App\Models\Subscription;
+use App\Models\User;
+use http\Client\Response;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -14,6 +16,9 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\StreamedResponse;
+use function MongoDB\BSON\toJSON;
 
 class PagesController extends Controller
 {
@@ -151,6 +156,54 @@ class PagesController extends Controller
     public function addAuthor(Request $request)
     {
         return view ('add-author');
+    }
+
+    /**
+     * @param  Request  $request
+     * @return StreamedResponse
+     */
+    public function downloadBooklet(Request $request)
+    {
+        $headers = array(
+            'Content-Type: application/pdf',
+        );
+
+        $filename = 'aa.pdf';
+
+        return Storage::get($filename);
+
+        return Storage::download($filename, 'Free IELTS Starter Pack - Last Minute English.pdf', $headers);
+    }
+
+    /**
+     * @param  Request  $request
+     *
+     */
+    public function downloadCheck(Request $request)
+    {
+        $downloadKey = $request->get('download_key');
+
+        $user = User::find($downloadKey);
+
+        if ($downloadKey == 'BGJXabzDSTviCDxuQTaj') {
+            return json_encode([
+                'success' => true,
+                'download_secret' => 'iouelaknkl'
+            ]);
+        }
+
+        return json_encode([
+            'success' => false
+        ]);
+    }
+
+    /**
+     * @param  Request  $request
+     * @return StreamedResponse
+     */
+    public function download(Request $request)
+    {
+        return view('download');
     }
 
 }

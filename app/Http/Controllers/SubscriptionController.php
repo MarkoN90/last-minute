@@ -65,6 +65,10 @@ class SubscriptionController extends Controller
 
             $m->from('hello@lastminuteenglish.org', 'Last Minute English');
             $m->to($subscription->email, $subscription->first_name)->subject('Thank You For Your Subscription');
+            $m->attach(storage_path('aa.pdf'), [
+                'as' => 'Free IELTS Starter Pack - Last Minute English.pdf',
+                'mime' => 'application/pdf',
+            ]);
         });
 
         if (!$subscription) {
