@@ -226,9 +226,9 @@
             <div class="row position-relative">
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
                     <div>
-                        <div class="image-wrapper"><img class="testimonial-image" style="margin-top:-6px;" width="180" src="{{ asset('images/') }}/review1.png"></div>
+                        <div class="image-wrapper"><img class="testimonial-image" style="margin-top:-4px;" width="180" src="{{ asset('images/') }}/review1.png"></div>
                         <h3 class="testimonial-card-main-title">Anthony</h3>
-                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS General in 2021. Now working in Canada</h4>
+                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS General in 2021. Now working in Canada &nbsp; &nbsp;</h4>
                         <p class="full-testimonial-text" style="display: none;">
                             Anthony needed an IELTS Band 7 score to start working as an IELTS trainer in
                             his hometown. He already knew a lot about the IELTS exam, but he always scored Band
@@ -243,7 +243,8 @@
                     <div>
                         <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/Jack Illustration.png"></div>
                         <h3 class="testimonial-card-main-title">Paul</h3>
-                        <h4 class="testimonial-card-subtitle  pb-3">Took IELTS General in 2021. Now working in Canada</h4>
+                        <h4 class="testimonial-card-subtitle  pb-3">Took IELTS Academic in 2020
+                            Now Studying in Cabridge, UK</h4>
                         <p class="full-testimonial-text" style="display: none;">
                             Paul wanted to attend a UK university. The university needed him to score a Level
                             7 or higher overall. After taking the Last Minute English Premium Package, he scored
@@ -253,11 +254,12 @@
                         <button class="action-button-2 mt-2 read-more-testimonials" data-no="second" data-name="Jack">Read more</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center">
+                <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center ">
                     <div>
                         <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/Lauren Illustration.png"></div>
-                        <h3 class="testimonial-card-main-title">Anthony</h3>
-                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS General in 2021. Now working in Canada</h4>
+                        <h3 class="testimonial-card-main-title">Lauren</h3>
+                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS Academic in 2021
+                            Now working for Tencent is SZ</h4>
                         <p class="full-testimonial-text" style="display: none;">
                             Lauren lives in Hong Kong and works as an English-Chinese translator. She
                             needed to take the IELTS exam to prove her English level to her customers. However,
@@ -274,7 +276,7 @@
                         <div class="image-wrapper"><img id="testimonial-image" width="140" src="{{ asset('images/') }}/review1.png"></div>
                         <div>
                             <h3 class="p-5 pt-0 " id="bubble-name">Lauren</h3>
-                            <p class="p-5 pt-0 pb-4">
+                            <p class="p-5 pt-0 pb-4" id="bubble-content">
                                 Lauren lives in Hong Kong and works as an English-Chinese translator. She
                                 needed to take the IELTS exam to prove her English level to her customers. However,
                                 she had trouble with the exam, scoring only Band 6.5 overall. (New paragraph) After
@@ -557,18 +559,23 @@
         const testimonials = {
             first: {
                 image: "review1.png",
+                arrowOffsetS: '90px',
                 arrowOffset: '90px',
+                text: 'Anthony needed an IELTS Band 7 score to start working as an IELTS trainer inhis hometown. He already knew a lot about the IELTS exam, but he always scored Band6 or 6.5 in speaking. After taking 1-1 classes with Francis, he was able to score 7.5 inIELTS speaking, and now teaches IELTS skills to other students. Great work Anthony!'
 
             },
             second: {
                 image: "Jack Illustration.png",
+                arrowOffsetS: '460px',
                 arrowOffset: '530px',
+                text: 'Paul wanted to attend a UK university. The university needed him to score a Level 7 or higher overall. After taking the Last Minute English Premium Package, he scored Band 7.5 overall, including Band 8 in writing. He was able to travel to the UK and is currently studying a bachelor’s degree in Business. Well done Paul!'
 
             },
             third: {
                 image: "Lauren Illustration.png",
+                arrowOffsetS: '840px',
                 arrowOffset: '970px',
-
+                text: 'xLauren lives in Hong Kong and works as an English-Chinese translator. Sheneeded to take the IELTS exam to prove her English level to her customers. However,she had trouble with the exam, scoring only Band 6.5 overall. (New paragraph) Aftertaking the IELTS Premium Package, she scored Band 8 overall, including 7.5 for Writingand Speaking. She now has more great work opportunities and is considering taking aMaster’s Degree in the UK. Congratulations Lauren!'
             }
         }
 
@@ -671,15 +678,23 @@
             console.log(url);
             let bubbleImage = document.getElementById('testimonial-image');
             let bubbleName = document.getElementById('bubble-name');
+            let bubbleContent = document.getElementById('bubble-content');
 
             bubbleName.innerHTML = e.target.getAttribute('data-name');
 
             let imagePath = url + testimonials[e.target.getAttribute('data-no')].image;
 
             bubbleImage.setAttribute('src', imagePath);
+            bubbleContent.innerText = testimonials[e.target.getAttribute('data-no')].text;
 
-            arrowBlackDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffset;
-            arrowDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffset;
+            if(window.innerWidth < 1400) {
+                arrowBlackDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffsetS;
+                arrowDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffsetS;
+            } else {
+                arrowBlackDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffset;
+                arrowDown.style.left = testimonials[e.target.getAttribute('data-no')].arrowOffset;
+            }
+
 
             testimonialBubbleWrapper.style.display = 'block';
         }
