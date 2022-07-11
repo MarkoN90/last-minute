@@ -328,9 +328,12 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="d-flex align-item-center   pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white">
-                                                <i class="fas fa-check check-sign"></i>
+                                            <div>
+                                                <div class="green-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
                                             </div>
+
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (15, 30, 60 days)</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
@@ -368,18 +371,32 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">
-                                                IELTS Speaking New Answers (updated every season)
+                                            <div>
+                                                <div class="header-dark-blue pricing-card-benefit-text mx-2">
+                                                    IELTS Speaking New Answers (updated every season)
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Writing - Marking</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">30-Day Speaking Correction Service</div>
+
+                                            <div>
+                                                <div class="empty-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">30-Day Speaking Correction Service</div>
+
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">1-1 Classes with IELTS Examiner</div>
+                                            <div>
+                                                <div class="empty-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">1-1 Classes with IELTS Examiner</div>
                                         </div>
                                     </div>
                                 </div>
@@ -403,9 +420,12 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="d-flex align-item-center   pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white">
-                                                <i class="fas fa-check check-sign"></i>
+                                            <div>
+                                                <div class="green-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
                                             </div>
+
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (15, 30, 60 days)</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
@@ -425,11 +445,11 @@
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 5 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
+                                            <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div>
-                                                <div class="empty-circle mx-2 text-center text-white">
+                                                <div class="green-circle mx-2 text-center text-white">
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
@@ -439,22 +459,36 @@
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div>
-                                                <div class="empty-circle mx-2 text-center text-white">
+                                                <div class="green-circle mx-2 text-center text-white">
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">
-                                                IELTS Speaking New Answers (updated every season)
+                                            <div>
+                                                <div class="header-dark-blue pricing-card-benefit-text mx-2">
+                                                    IELTS Speaking New Answers (updated every season)
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Writing - Marking</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">30-Day Speaking Correction Service</div>
+
+                                            <div>
+                                                <div class="empty-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">30-Day Speaking Correction Service</div>
+
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">1-1 Classes with IELTS Examiner</div>
+                                            <div>
+                                                <div class="empty-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">1-1 Classes with IELTS Examiner</div>
                                         </div>
                                     </div>
                                 </div>
@@ -474,10 +508,13 @@
                             <div class="package-body">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="d-flex align-item-center pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white">
-                                                <i class="fas fa-check check-sign"></i>
+                                        <div class="d-flex align-item-center   pricing-card-benefit-wrapper">
+                                            <div>
+                                                <div class="green-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
                                             </div>
+
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (15, 30, 60 days)</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
@@ -497,10 +534,7 @@
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 5 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white">
-                                                <i class="fas fa-check check-sign"></i>
-                                            </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
+                                            <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div>
@@ -518,25 +552,30 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">
-                                                IELTS Speaking New Answers (updated every season)
+                                            <div>
+                                                <div class="header-dark-blue pricing-card-benefit-text mx-2">
+                                                    IELTS Speaking New Answers (updated every season)
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white">
-                                                <i class="fas fa-check check-sign"></i>
-                                            </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Writing - Marking</div>
+                                            <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Writing - Marking</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white">
-                                                <i class="fas fa-check check-sign"></i>
+
+                                            <div>
+                                                <div class="green-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
                                             </div>
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">30-Day Speaking Correction Service</div>
+
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
-                                            <div class="green-circle mx-2 text-center text-white">
-                                                <i class="fas fa-check check-sign"></i>
+                                            <div>
+                                                <div class="green-circle mx-2 text-center text-white">
+                                                    <i class="fas fa-check check-sign"></i>
+                                                </div>
                                             </div>
                                             <div class="header-dark-blue pricing-card-benefit-text mx-2">1-1 Classes with IELTS Examiner</div>
                                         </div>

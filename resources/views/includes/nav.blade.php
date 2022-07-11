@@ -6,7 +6,7 @@
                 <li><a style="cursor: pointer;" class="nav-pricing-link">Courses</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><button class="action-button-2" class="nav-pricing-link" id="nav-start-btn">Start Studying</button></li>
+                <li><button class="action-button-2 nav-pricing-link"   >Start Studying</button></li>
             </ul>
             <div class="mobile-nav">
                 <i id="menu-icon" class="fas fa-bars"></i>
