@@ -614,7 +614,7 @@
                 image: "Lauren Illustration.png",
                 arrowOffsetS: '840px',
                 arrowOffset: '970px',
-                text: 'xLauren lives in Hong Kong and works as an English-Chinese translator. Sheneeded to take the IELTS exam to prove her English level to her customers. However,she had trouble with the exam, scoring only Band 6.5 overall. (New paragraph) Aftertaking the IELTS Premium Package, she scored Band 8 overall, including 7.5 for Writingand Speaking. She now has more great work opportunities and is considering taking aMaster’s Degree in the UK. Congratulations Lauren!'
+                text: 'Lauren lives in Hong Kong and works as an English-Chinese translator. Sheneeded to take the IELTS exam to prove her English level to her customers. However,she had trouble with the exam, scoring only Band 6.5 overall. (New paragraph) Aftertaking the IELTS Premium Package, she scored Band 8 overall, including 7.5 for Writingand Speaking. She now has more great work opportunities and is considering taking aMaster’s Degree in the UK. Congratulations Lauren!'
             }
         }
 
