@@ -19422,9 +19422,9 @@ var closePopout = document.getElementById('close-popout');
 closePopout.addEventListener('click', function (e) {
   popoutLayer.style.display = 'none';
 });
-document.getElementById('nav-start-btn').addEventListener('click', function (e) {
-  document.getElementById('pricing').scrollIntoView();
-});
+// document.getElementById('nav-start-btn').addEventListener('click', function (e) {
+//   document.getElementById('pricing').scrollIntoView();
+// });
 document.getElementById('popout-form').addEventListener('submit', function (e) {
   e.preventDefault();
   var form = new FormData(document.getElementById('popout-form'));
