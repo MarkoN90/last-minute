@@ -20,7 +20,7 @@
                         <input type="email" class="popout-input" name="email" placeholder="Email Address" required>
                     </div>
                     <div class="form-group text-center">
-                        <button id="popout-subscribe-btn" class="popout-input square-action-button">Subscribe</button>
+                        <button id="popout-subscribe-btn" class="popout-input square-action-button">Send</button>
                     </div>
                 </form>
             <div id="subscription-message" class="last-minute-dark-blue">Thank you for subscribing!!</div>

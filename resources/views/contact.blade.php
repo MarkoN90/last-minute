@@ -33,12 +33,11 @@
                             <button type="submit" class="popout-input square-action-button">Submit</button>
                         </div>
                     </form>
-                    <div id="contact-message" class="last-minute-dark-blue">Thank you for subscribing!!</div>
+                    <div id="contact-message" class="last-minute-dark-blue">Thank you for reaching out we will respond you quickly as possible!</div>
                 </div>
                 <div class="col-12 col-md-6">
                     <h4 class="p-3">Connect With Us</h4>
                     <ul class="text-white social-icons-list-about">
-{{--                        <li class="m-3"><a><i class="fab fa-instagram" style="color:black;"></i></a></li>--}}
                         <li class="m-3"><a href="https://www.facebook.com/lastminuteenglishofficial" ><i class="fab fa-facebook-square" style="color:black;"></i></a></li>
                         <li class="m-3"><a href="https://cn.linkedin.com/in/francis-carlisle"><i class="fab fa-linkedin" style="color:black;"></i></a></li>
                         <li class="m-3"><a href=https://www.youtube.com/c/LastMinuteEnglish" ><i class="fab fa-youtube" style="color:black;"></i></a></li>
@@ -55,13 +54,15 @@
 
             e.preventDefault();
 
-            let form = new FormData(document.getElementById('contact'));
+            let form = new FormData(document.getElementById('contact-form'));
 
             axios.post('/contact', {
+
                 first_name : form.get('first_name'),
                 last_name  : form.get('last_name'),
                 email : form.get('email'),
                 content : form.get('content')
+
             }).then((response) => {
 
                 if(response.data.success === true) {

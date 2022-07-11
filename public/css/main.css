@@ -521,11 +521,10 @@ footer {
 @media only screen and (max-width: 1400px) {
 
     #girl-illustration {
-        height: 500px;
+        height: 400px;
         margin: 140px;
         margin-right: 20px;
-
-        margin-left: -50px;
+        margin-left: 60px;
     }
 }
 
@@ -946,12 +945,14 @@ nav {
     font-size: 28px;
     text-align: center;
     padding: 20px 90px 8px;
+    height: 120px;
 }
 
 .package-name-price {
     font-size: 30px;
     text-align: center;
     font-weight: 700;
+    height: 40px;
 }
 
 .pricing-card-top-gray {

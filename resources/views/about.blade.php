@@ -58,14 +58,14 @@
                 <div class="row">
                     <div class="col-12 col-lg-10 offset-lg-1">
                         <blockquote class="p-4" id="big-header">
-                            "Big bold testimonials from a happy customer, can be used to share or repeat  a nice detail about Last Minute English"
+                            “Took this course for one month to prepare for my IELTS exam and got a score of 7.5. Great
+                            course and great instructor. Enjoyed it thoroughly.”
                         </blockquote>
                     </div>
                 </div>
-            <div class="qoute-author">Tommy Brabham</div>
-            <div class="qoute-author-company pb-5">Designer of Websites, Warpaint Agency</div>
+            <div class="qoute-author">Melvin R.</div>
+            <div class="qoute-author-company pb-5">Last Minute English student on Udemy.com</div>
             <div class="p-lg-5">
-
             </div>
             </div>
         </div>

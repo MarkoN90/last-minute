@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use function MongoDB\BSON\toJSON;
@@ -206,4 +207,54 @@ class PagesController extends Controller
         return view('download');
     }
 
+
+    /**
+     * @param  Request  $request
+     */
+    public function contactSupport(Request $request)
+    {
+        $data = [
+            'first_name' => $request->get('first_name'),
+            'last_name'  => $request->get('last_name'),
+            'email'      => $request->get('email'),
+            'content'      => $request->get('content')
+        ];
+
+        Mail::send('emails.SupportMail', ['data' => $data], function ($m) use ($data) {
+
+            $m->from('hello@lastminuteenglish.org', 'Last Minute English');
+            $m->to('markonisevic90@gmail.com', 'Support')->subject('Website Support');
+            $m->replyTo($data['email'], $data['first_name'] . ' ' . $data['last_name']);
+        });
+
+        return response()->json(
+            ['success' => true]
+        );
+
+    }
+
+    /**
+     * @param  Request  $request
+     */
+    public function Support(Request $request)
+    {
+        $data = [
+            'first_name' => $request->get('first_name'),
+            'last_name'  => $request->get('last_name'),
+            'email'      => $request->get('email'),
+            'content'    => $request->get('email')
+        ];
+
+        Mail::send('emails.SupportEmail', ['data' => $data], function ($m) use ($data) {
+
+            $m->from('hello@lastminuteenglish.org', 'Last Minute English');
+            $m->to('markonisevic90@gmail.com', $data['Support'])->subject('Website Support');
+            $m->replyTo($data['email'], $data['first_name'] . ' ' . $data['last_name']);
+        });
+
+        return response()->json(
+            ['success' => true]
+        );
+
+    }
 }
