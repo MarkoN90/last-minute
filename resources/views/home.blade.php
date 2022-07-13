@@ -52,7 +52,7 @@
     <div style=" width: 100%; background-size: cover; margin: 0px;  background-image: url('{{ URL::to('/') }}/iimages/Last-Min-English-landing-page-screens.png')">
         <div style=" width: 100%; background-size: cover; margin: 0px;">
             @include('includes.nav')
-            <div class="container d-none d-md-block" style="height: 900px">
+            <div id="main-section" class="container d-none d-md-block" style="">
                 <div class="row">
                     <div class="col-10">
                         <h1 id="main-title">Get <span id="main-title-ielts">IELTS</span> done.</h1>
@@ -146,7 +146,7 @@
                     <div class="value-card p-3 pt-5">
                         <img src="{{ asset('images/') }}/phone.png">
                         <h3 class="value-card-main-title mt-4">Convenient</h3>
-                        <h4 class="value-card-subtitle">Everything in one places</h4>
+                        <h4 class="value-card-subtitle">Everything in one place</h4>
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                         <img src="{{ asset('images/') }}/girl-reading.png">
                     </div>
                     <div>
-                        <h3 class="included-card-main-title">40+ hours of classes</h3>
+                        <h3 class="included-card-main-title">Understand IELTS examiner thinking</h3>
                         <h4 class="included-card-subtitle">Fun, interactive videos</h4>
                     </div>
                 </div>
@@ -203,7 +203,7 @@
                     </div>
                     <div>
                         <h3 class="included-card-main-title">40+ hours of classes</h3>
-                        <h4 class="included-card-subtitle">400+ pages of band 7+ content</h4>
+                        <h4 class="included-card-subtitle">Learn the best way to score Band 7+</h4>
                     </div>
                 </div>
 
@@ -213,7 +213,7 @@
                     </div>
                     <div>
                         <h3 class="included-card-main-title">IELTS step-by-step study journey</h3>
-                        <h4 class="included-card-subtitle">1, 2 3 and 6 months</h4>
+                        <h4 class="included-card-subtitle">1, 2 3 and 4 months</h4>
                     </div>
                 </div>
             </div>
@@ -251,7 +251,7 @@
                             Band 7.5 overall, including Band 8 in writing. He was able to travel to the UK and is
                             currently studying a bachelor’s degree in Business. Well done Paul!
                         </p>
-                        <button class="action-button-2 mt-2 read-more-testimonials" data-no="second" data-name="Jack">Read more</button>
+                        <button class="action-button-2 mt-2 read-more-testimonials" data-no="second" data-name="Paul">Read more</button>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mt-5 p-3 testimonial-wrapper text-center ">
@@ -503,7 +503,7 @@
                             <div class="pricing-card-top pricing-card-top-green"></div>
                             <div class="package-name-wrap">
                                 <h3 class="package-name-header">IELTS Premium Package</h3>
-                                <h5 class="package-name-price">Starting from $75 USD</h5>
+                                <h5 class="package-name-price p-2">Starting from $75 USD</h5>
                             </div>
                             <div class="package-body">
                                 <div class="row">
@@ -583,7 +583,7 @@
                                 </div>
                             </div>
                             <div class="text-center" style="padding-top: 30px;">
-                                <button class="action-button">Start now</button>
+                                <button class="action-button" onclick="window.location = '/contact'">Start now</button>
                             </div>
                         </div>
                     </div>
@@ -600,7 +600,7 @@
                 image: "review1.png",
                 arrowOffsetS: '90px',
                 arrowOffset: '90px',
-                text: 'Anthony needed an IELTS Band 7 score to start working as an IELTS trainer inhis hometown. He already knew a lot about the IELTS exam, but he always scored Band6 or 6.5 in speaking. After taking 1-1 classes with Francis, he was able to score 7.5 inIELTS speaking, and now teaches IELTS skills to other students. Great work Anthony!'
+                text: 'Anthony needed an IELTS Band 7 score to start working as an IELTS trainer in his hometown. He already knew a lot about the IELTS exam, but he always scored Band 6 or 6.5 in speaking. After taking 1-1 classes with Francis, he was able to score 7.5 in IELTS speaking, and now teaches IELTS skills to other students. Great work Anthony!'
 
             },
             second: {
@@ -614,7 +614,7 @@
                 image: "Lauren Illustration.png",
                 arrowOffsetS: '840px',
                 arrowOffset: '970px',
-                text: 'Lauren lives in Hong Kong and works as an English-Chinese translator. Sheneeded to take the IELTS exam to prove her English level to her customers. However,she had trouble with the exam, scoring only Band 6.5 overall. (New paragraph) Aftertaking the IELTS Premium Package, she scored Band 8 overall, including 7.5 for Writingand Speaking. She now has more great work opportunities and is considering taking aMaster’s Degree in the UK. Congratulations Lauren!'
+                text: 'Lauren lives in Hong Kong and works as an English-Chinese translator. She needed to take the IELTS exam to prove her English level to her customers. However, she had trouble with the exam, scoring only Band 6.5 overall. \n \n After taking the IELTS Premium Package, she scored Band 8 overall, including 7.5 for Writing and Speaking. She now has more great work opportunities and is considering taking a Master’s Degree in the UK. Congratulations Lauren!'
             }
         }
 

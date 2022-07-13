@@ -7,9 +7,7 @@
                 </div>
                 <div>
                     <h2 class="text-white footer-header">
-                        Short Last Minute English objective,
-                        summary or slogan to sign off
-                        and help SEO.
+                        English, just for you.
                     </h2>
                 </div>
             </div>

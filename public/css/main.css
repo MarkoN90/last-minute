@@ -11,8 +11,8 @@
 }
 
 #popout {
-    height: 350px;
-    width: 700px;
+    height: 400px;
+    width: 800px;
     border-radius: 30px;
     background: white;
     position: relative;
@@ -511,6 +511,11 @@ footer {
 
 }
 
+#main-section {
+    height: 900px;
+
+}
+
 
 @media only screen and (max-width: 1600px) {
 
@@ -520,15 +525,33 @@ footer {
             margin-right: 50px;
             margin-left: -150px;
         }
+
+
 }
 
 @media only screen and (max-width: 1400px) {
 
+    #main-section {
+        height: 700px;
+
+    }
+
     #girl-illustration {
         height: 400px;
-        margin: 140px;
+        margin: 60px;
         margin-right: 20px;
         margin-left: 60px;
+    }
+
+    #main-title {
+        color: #051138;
+        font-size: 85px;
+        font-weight: 800;
+        padding-top: 60px;
+        padding-left: 30px;
+        text-align: left;
+        letter-spacing: -2px;
+        /* display: inline; */
     }
 }
 
@@ -542,6 +565,8 @@ footer {
         margin: 20px 10px;
         color: #0a163c;
     }
+
+
 }
 
 

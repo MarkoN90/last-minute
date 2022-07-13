@@ -18,10 +18,10 @@
                 <div class="col-12 col-md-6">
                     <form id="contact-form" class="mt-2 pb-4">
                         <div class="form-group text-center">
-                            <input type="text" class="popout-input" name="first_name" required placeholder="First Name*">
+                            <input type="text" class="popout-input" name="first_name" required placeholder="Given Name*">
                         </div>
                         <div class="form-group text-center">
-                            <input type="text" class="popout-input" name="last_name" required placeholder="Last Name*">
+                            <input type="text" class="popout-input" name="last_name" required placeholder="Family Name*">
                         </div>
                         <div class="form-group text-center">
                             <input type="text" class="popout-input" name="email" required placeholder="Email Address*">
