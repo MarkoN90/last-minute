@@ -310,9 +310,6 @@ nav {
     margin-left: -250px;
 }
 
-.about-section-header {
-
-}
 
 .main-article-header {
 
@@ -517,6 +514,26 @@ footer {
 }
 
 
+.about {
+    margin-top: 100px;
+}
+
+.about-section-header {
+    font-weight: 700;
+    font-size: 45px;
+    padding: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.about-paragraph {
+    padding: 70px;
+    font-size: 23px;
+    color: #959595;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 1600px) {
 
         #girl-illustration {
@@ -573,6 +590,20 @@ footer {
 
 
 @media only screen and (max-width: 850px) {
+
+
+    .about-paragraph {
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
+        color: #959595;
+        font-weight: 600;
+    }
+
+    .about-section-header {
+        text-align: center;
+        padding:20px;
+    }
 
     .single-post-header {
         font-size: 25px;

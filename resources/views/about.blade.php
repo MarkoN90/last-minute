@@ -1,28 +1,6 @@
 @extends('layouts.public')
 @section('content')
 
-    <style>
-        .about {
-            margin-top: 100px;
-        }
-
-        .about-section-header {
-            font-weight: 700;
-            font-size: 45px;
-            padding: 70px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-
-        }
-
-        .about-paragraph {
-            padding: 70px;
-            font-size: 23px;
-            color: #959595;
-            font-weight: 600;
-        }
-
-    </style>
 
     <div style=" width: 100%;   background-size: cover; margin: 0px;  background-image: url('{{ URL::to('/') }}/iimages/Lastf-Min-English-About-screens.png')">
         <div style=" width: 100%; background-size: cover; margin: 0px;">
