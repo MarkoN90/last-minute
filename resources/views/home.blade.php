@@ -163,7 +163,7 @@
                         <img src="{{ asset('images/') }}/girl-reading.png">
                     </div>
                     <div>
-                        <h3 class="included-card-main-title">Understand IELTS examiner thinking</h3>
+                        <h3 class="included-card-main-title">40+ hours of classes</h3>
                         <h4 class="included-card-subtitle">Fun, interactive videos</h4>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                         <img src="{{ asset('images/') }}/light.png">
                     </div>
                     <div>
-                        <h3 class="included-card-main-title">40+ hours of classes</h3>
+                        <h3 class="included-card-main-title">Understand IELTS examiner thinking</h3>
                         <h4 class="included-card-subtitle">Learn the best way to score Band 7+</h4>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                     </div>
                     <div>
                         <h3 class="included-card-main-title">IELTS step-by-step study journey</h3>
-                        <h4 class="included-card-subtitle">1, 2 3 and 4 months</h4>
+                        <h4 class="included-card-subtitle">1, 2 and 4 months</h4>
                     </div>
                 </div>
             </div>
@@ -243,8 +243,8 @@
                     <div>
                         <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/Jack Illustration.png"></div>
                         <h3 class="testimonial-card-main-title">Paul</h3>
-                        <h4 class="testimonial-card-subtitle  pb-3">Took IELTS Academic in 2020
-                            Now Studying in Cabridge, UK</h4>
+                        <h4 class="testimonial-card-subtitle  pb-3">Took IELTS Academic in 2020.
+                            Now Studying in Cambridge, UK</h4>
                         <p class="full-testimonial-text" style="display: none;">
                             Paul wanted to attend a UK university. The university needed him to score a Level
                             7 or higher overall. After taking the Last Minute English Premium Package, he scored
@@ -258,8 +258,8 @@
                     <div>
                         <div class="image-wrapper"><img class="testimonial-image" width="180" src="{{ asset('images/') }}/Lauren Illustration.png"></div>
                         <h3 class="testimonial-card-main-title">Lauren</h3>
-                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS Academic in 2021
-                            Now working for Tencent is SZ</h4>
+                        <h4 class="testimonial-card-subtitle pb-3">Took IELTS Academic in 2021.
+                            Now working for Tencent in SZ</h4>
                         <p class="full-testimonial-text" style="display: none;">
                             Lauren lives in Hong Kong and works as an English-Chinese translator. She
                             needed to take the IELTS exam to prove her English level to her customers. However,
@@ -334,7 +334,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (15, 30, 60 days)</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (1, 2, 4 months)</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
                                             <div>
@@ -342,7 +342,7 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Vocabulary List – 10 most common topics</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Vocabulary List – 5 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
                                             <div>
@@ -350,7 +350,7 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 5 most common topics</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 3 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div class="empty-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
@@ -426,7 +426,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (15, 30, 60 days)</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (1, 2, 4 months)</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
                                             <div>
@@ -434,7 +434,7 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Vocabulary List – 10 most common topics</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Vocabulary List – 5 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
                                             <div>
@@ -442,7 +442,7 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 5 most common topics</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 3 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
@@ -515,7 +515,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (15, 30, 60 days)</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Study Plan (1, 2, 4 months)</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
                                             <div>
@@ -523,7 +523,7 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Vocabulary List – 10 most common topics</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Vocabulary List – 5 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center pricing-card-benefit-wrapper">
                                             <div>
@@ -531,7 +531,7 @@
                                                     <i class="fas fa-check check-sign"></i>
                                                 </div>
                                             </div>
-                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 5 most common topics</div>
+                                            <div class="header-dark-blue pricing-card-benefit-text mx-2">IELTS Argument Booklet – 3 most common topics</div>
                                         </div>
                                         <div class="d-flex align-item-center  pricing-card-benefit-wrapper">
                                             <div class="green-circle mx-2 text-center text-white"><i class="fas fa-check check-sign"></i></div> <div class="header-dark-blue pricing-card-benefit-text mx-2">40+ Hours of Video Classes</div>
