@@ -33,7 +33,7 @@
                                 <div class="article-text-wrapper">
                                     <div class="article-info-group text-left pl-3">
                                         <div class="d-inline-block mx-1 fw-bold last-minute-dark-blue">{{ $post->category }}</div>
-                                        <div class="d-inline-block mx-1 fw-bold last-minute-green">4 min read</div>
+                                        <div class="d-inline-block mx-1 fw-bold last-minute-green">{{ $post->reading_time }} min read</div>
                                     </div>
                                     <div><h3 class="article-header">{{ $post->title }}</h3></div>
                                 </div>
