@@ -9,7 +9,7 @@
                 <div class="">
                     <div class="article-info text-center">
                         <div class="d-inline-block mx-1 fw-bold last-minute-dark-blue"><a href="/category/{{ $post->category }}">{{ $post->category }}</a></div>
-                        <div class="d-inline-block mx-1 fw-bold last-minute-green">4 min read</div>
+                        <div class="d-inline-block mx-1 fw-bold last-minute-green">{{ $post->reading_time }} min read</div>
                     </div>
                 </div>
                 <div>
@@ -24,10 +24,10 @@
                     <div class="">
                         <div class="article-info text-center p-3">
                             <div>
-                                <img src="{{ URL::to('/') }}/images/author.png">
+                                <img class="author-post-avatar" src="{{ URL::to('/') }}/images/{{$post->user->profile_image}}">
                             </div>
                             <div>
-                                <div class="d-block mx-1 fw-bold last-minute-dark-blue text-left">Charlie</div>
+                                <div class="d-block mx-1 fw-bold last-minute-dark-blue text-left">Charlie, {{$post->user->profession}}</div>
                                 <div class="d-block mx-1 fw-bold last-minute-green text-left">{{ $post->created_at->toFormattedDateString() }}</div>
                             </div>
                         </div>

@@ -72,6 +72,21 @@ class PostsController extends Controller
     /**
      * Display the specified resource.
      *
+     * @param  string  $category
+     * @return Application|Factory|View
+     */
+    public function showCategory(string $category)
+    {
+        $posts = DB::table('posts')
+            ->where('category', '=' ,$category)
+            ->get();
+
+        return view('post', ['post' => $posts]);
+    }
+
+    /**
+     * Display the specified resource.
+     *
      * @param  \App\Models\Posts  $posts
      * @return Application|Factory|View
      */
@@ -121,7 +136,7 @@ class PostsController extends Controller
         $posts->body         = $request->post('body');
         $posts->category     = $request->post('category');
         $posts->published    = (bool) $request->post('published');
-        $posts->published    = (bool) $request->post('main');
+        $posts->main    = (bool) $request->post('main');
 
         $readingTime = round(str_word_count($request->post('body')) / 250);
         $readingTime = ($readingTime == 0) ? 1 : $readingTime;
