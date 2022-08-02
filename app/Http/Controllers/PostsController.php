@@ -96,6 +96,10 @@ class PostsController extends Controller
             ->where('id', '!=' ,$posts->id)
             ->get();
 
+        (int) $posts->num_of_views++;
+
+        $posts->save();
+
         return view('post', ['post' => $posts, 'otherPosts' => $otherPosts]);
     }
 

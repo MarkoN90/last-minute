@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('category');
             $table->boolean('published')->nullable()->default(false);
             $table->boolean('main')->nullable()->default(false);
+            $table->integer('num_of_views')->default(0);
             $table->integer('reading_time')->nullable()->default(1);
             $table->boolean('author_id');
             $table->string('image_name');

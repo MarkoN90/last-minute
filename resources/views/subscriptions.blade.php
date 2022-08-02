@@ -2,7 +2,7 @@
 @section('content')
     <div class="content">
         <h3 class="text-900 mb-3" data-anchor="" id="example">All Subscriptions</h3>
-        <div class="my-4" id="tableExample" data-list="{&quot;valueNames&quot;:[&quot;name&quot;,&quot;email&quot;,&quot;age&quot;],&quot;page&quot;:5,&quot;pagination&quot;:true}">
+        <div class="my-4" id="tableExample" data-list="{&quot;valueNames&quot;:[&quot;name&quot;,&quot;email&quot;,&quot;age&quot;],&quot;page&quot;:15,&quot;pagination&quot;:true}">
             <div class="table-responsive scrollbar">
                 <table class="table table-bordered table-striped fs--1 mb-0">
                     <thead class="bg-200 text-900">
