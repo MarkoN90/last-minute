@@ -557,27 +557,36 @@ footer {
 @media only screen and (max-width: 1400px) {
 
     #main-section {
-        height: 700px;
+        height: 675px;
 
     }
 
     #girl-illustration {
-        height: 400px;
-        margin: 60px;
+        height: 370px;
+        margin: 50px;
         margin-right: 20px;
         margin-left: 60px;
     }
 
     #main-title {
         color: #051138;
-        font-size: 85px;
+        font-size:75px;
         font-weight: 800;
-        padding-top: 60px;
+        padding-top: 50px;
         padding-left: 30px;
         text-align: left;
         letter-spacing: -2px;
         /* display: inline; */
     }
+
+    #main-title-ielts {
+        font-size: 75px;
+    }
+
+    #main-subtitle {
+        font-size: 40px;
+    }
+
 }
 
 
