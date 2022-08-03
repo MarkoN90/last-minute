@@ -15,6 +15,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
@@ -220,10 +221,18 @@ class PagesController extends Controller
             'content'      => $request->get('content')
         ];
 
+        // set the config for mailing
+        Config::set('mail.mailers.smtp.host', 'smtp.mailgun.org');
+        Config::set('mail.mailers.smtp.port', 587);
+        Config::set('mail.mailers.smtp.username', 'postmaster@sandbox2020501c36264efca4a926d684ae62c0.mailgun.org');
+        Config::set('mail.mailers.smtp.password', 'fb5297d2d206a17ca2275a4565f0ebf3-8d821f0c-2ca45de6');
+        Config::set('mail.from.address', 'postmaster@sandbox2020501c36264efca4a926d684ae62c0.mailgun.org');
+        Config::set('mail.from.name', 'Website Contact page');
+
         Mail::send('emails.SupportMail', ['data' => $data], function ($m) use ($data) {
 
-            $m->from('hello@lastminuteenglish.org', 'Last Minute English');
-            $m->to('markonisevic90@gmail.com', 'Support')->subject('Website Support');
+            $m->from('postmaster@sandbox2020501c36264efca4a926d684ae62c0.mailgun.org', 'Website Contact page');
+            $m->to('hello@lastminuteenglish.org', 'Support')->subject('Last Minute English Support');
             $m->replyTo($data['email'], $data['first_name'] . ' ' . $data['last_name']);
         });
 
@@ -245,10 +254,11 @@ class PagesController extends Controller
             'content'    => $request->get('email')
         ];
 
+
         Mail::send('emails.SupportEmail', ['data' => $data], function ($m) use ($data) {
 
-            $m->from('hello@lastminuteenglish.org', 'Last Minute English');
-            $m->to('markonisevic90@gmail.com', $data['Support'])->subject('Website Support');
+            $m->from('postmaster@sandbox2020501c36264efca4a926d684ae62c0.mailgun.org', 'Last Minute English');
+            $m->to('hello@lastminuteenglish.org', $data['Support'])->subject('Website Contact Page');
             $m->replyTo($data['email'], $data['first_name'] . ' ' . $data['last_name']);
         });
 

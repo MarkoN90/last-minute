@@ -49,11 +49,11 @@ class SubscriptionController extends Controller
 
         ]);
 
-//        $subscription = Subscription::create([
-//            'first_name' => $validated['first_name'],
-//            'last_name'  => $validated['last_name'],
-//            'email'      => $validated['email'],
-//        ]);
+        $subscription = Subscription::create([
+            'first_name' => $validated['first_name'],
+            'last_name'  => $validated['last_name'],
+            'email'      => $validated['email'],
+        ]);
 
         $subscription = new Subscription();
 
